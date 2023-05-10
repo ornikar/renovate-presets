@@ -22,6 +22,9 @@
     "enabled": true,
     "schedule": []
   },
+  "encrypted": {
+    "npmToken": "wcFMA/xDdHCJBTolAQ/+NvON2H8btssHmaL/eJ+YGzGWraL0Q+ey1GxUpLRCXsn5OCGcKPW+zpyRa+ixdydfh26ctIxOTd8+m/MWEbzH1DCDYNOoBPrhbGlPRIhcuq8k2vUKLlWxNq4x+kTxqgfvPEGkxzVTU7wrPbKxAuD1Bh+q7KTu2kqlDfBxalCUEnwUVDJICKKTpmm4pc2ELaepGldw6QAlCTBBV4VXd3RNyCeY3bpmtqU5S9cUWZ0cKQdDTsOCoZCGRt9zjP2pvXv5vzv1QSSEj/CWD8YeNomg/o3WVj0m5Wm6WGoMcZ+dpNCMnk+k6McuU9ncNbH5/E8jb0pQkPe5Y3TJYY/GLiemDaigvqWOAwPnUNQJa3bz+oz8Uu/grRIIkcL5n+yhiXe/7wYuB9TGT7aPfFGmp4Z8CxqrXYEa0Jhkq7xQ6p6oFm1Jb1htrzIz+yCke572Gp0vGHkzeQy1o2//cLgwVPTAelbQ6JeNiSfbgNhX0JLjVWfPMBfG6m7lilzIAODjf/QgZxvMMW/DaxmLteaalx/6aPnLVArfySiJzgbP/kLM8F79j/GIZ/AHqAsXIwJDSsC70z+Ff8lDEoHBcF/xM1T2xc3N5lIsE7t0Hd4sPZXa21OUkZwm8ZQa21oFZ9I7glc6W/7JqLrxwTkrbl5/IiM0BCaG74jgeFOQxy4J2T+Uf6LSdgHXmsQ9Y9x5OMNWihG3olRsA2NP8GWsM+2rH48fCgkuRSLtrKoLyBohk8dzmyxpIwuXuJhAXLs8fkbEOhVcqduYsTuRJ6QiHXPP3EqaAHSmLKyc48WggJ8aoxnFlGP5dVLWFeF9N88czc7WNB5d84C2whx+bq8"
+  },
   "packageRules": [
     {
       "matchDepTypes": [

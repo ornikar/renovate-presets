@@ -1,0 +1,281 @@
+{
+  "schedule": "before 5am on Monday",
+  "prHourlyLimit": 0,
+  "prConcurrentLimit": 40,
+  "masterIssue": true,
+  "masterIssueApproval": true,
+  "recreateClosed": true,
+  "rebaseStalePrs": false,
+  "updateNotScheduled": false,
+  "postUpdateOptions": [
+    "yarnDedupeFewer",
+    "yarnDedupeHighest"
+  ],
+  "rangeStrategy": "bump",
+  "reviewers": [
+    "team:frontend-architects"
+  ],
+  "labels": [
+    "dependencies"
+  ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": []
+  },
+  "packageRules": [
+    {
+      "matchDepTypes": [
+        "dependencies",
+        "peerDependencies"
+      ],
+      "matchUpdateTypes": [
+        "major",
+        "minor"
+      ],
+      "semanticCommitType": "feat"
+    },
+    {
+      "matchDepTypes": [
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+        "patch"
+      ],
+      "semanticCommitType": "fix"
+    },
+    {
+      "matchUpdateTypes": [
+        "pin"
+      ],
+      "addLabels": [
+        ":white_check_mark: bot approval"
+      ],
+      "rebaseStalePrs": true,
+      "masterIssueApproval": false,
+      "schedule": [
+        "after 10am and before 5pm every weekday"
+      ],
+      "reviewers": []
+    },
+    {
+      "matchPackagePatterns": [
+        "^@ornikar/"
+      ],
+      "matchUpdateTypes": [
+        "patch"
+      ],
+      "addLabels": [
+        ":white_check_mark: bot approval"
+      ],
+      "rebaseStalePrs": true,
+      "reviewers": []
+    },
+    {
+      "matchPackagePatterns": [
+        "^@ornikar/(.*)-config",
+        "^@commitlint",
+        "^@testing-library",
+        "^eslint"
+      ],
+      "matchPackageNames": [
+        "yarn",
+        "husky",
+        "prettier",
+        "type-fest"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "addLabels": [
+        ":white_check_mark: bot approval"
+      ],
+      "reviewers": [],
+      "rebaseStalePrs": false,
+      "masterIssueApproval": false,
+      "schedule": [
+        "after 10am and before 11am every weekday"
+      ]
+    },
+    {
+      "matchPackageNames": [
+        "expo-cli"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "rebaseStalePrs": false,
+      "masterIssueApproval": false,
+      "schedule": [
+        "after 10am and before 11am every weekday"
+      ]
+    },
+    {
+      "matchPackagePatterns": [
+        "^@ornikar/"
+      ],
+      "rebaseStalePrs": false,
+      "masterIssueApproval": false,
+      "schedule": [
+        "after 10am and before 6pm every weekday"
+      ]
+    },
+    {
+      "matchPackagePatterns": [
+        "^@types/",
+        "typescript",
+        "chromatic"
+      ],
+      "matchUpdateTypes": [
+        "patch"
+      ],
+      "addLabels": [
+        ":white_check_mark: bot approval"
+      ],
+      "reviewers": [],
+      "rebaseStalePrs": false,
+      "masterIssueApproval": false,
+      "schedule": [
+        "after 10am and before 11am every weekday"
+      ]
+    },
+    {
+      "matchPackageNames": [
+        "^@types/"
+      ],
+      "matchUpdateTypes": [
+        "patch",
+        "minor"
+      ],
+      "groupName": null
+    },
+    {
+      "updateTypes": [
+        "major"
+      ],
+      "schedule": [
+        "at any time"
+      ],
+      "masterIssueApproval": true
+    },
+    {
+      "groupName": "Ornikar Frontend Orb",
+      "reviewers": [
+        "team:frontend-wg-foundations",
+        "team:frontend-architects"
+      ],
+      "matchDatasources": [
+        "orb"
+      ],
+      "matchPackageNames": [
+        "frontend"
+      ],
+      "labels": [
+        "circleci-orb"
+      ],
+      "schedule": [
+        "at any time"
+      ],
+      "rebaseStalePrs": true,
+      "masterIssueApproval": false
+    },
+    {
+      "groupName": "Ornikar Eslint Configs",
+      "sourceUrlPrefixes": [
+        "https://github.com/ornikar/eslint-configs"
+      ]
+    },
+    {
+      "groupName": "Repo Shared Configs Ornikar",
+      "matchPackageNames": [
+        "@ornikar/browserslist-config",
+        "@ornikar/commitlint-config",
+        "@ornikar/prettier-config",
+        "@ornikar/repo-config",
+        "@ornikar/repo-config-react",
+        "@ornikar/repo-config-react-legacy-css",
+        "@ornikar/intl-config",
+        "@ornikar/lerna-config"
+      ]
+    },
+    {
+      "groupName": "Jest Shared Configs Ornikar",
+      "matchPackagePatterns": [
+        "^@ornikar/jest(.*)-config"
+      ]
+    },
+    {
+      "groupName": "Build Shared Configs Ornikar",
+      "matchPackagePatterns": [
+        "^@ornikar/babel-preset-(.*)"
+      ],
+      "matchPackageNames": [
+        "@ornikar/babel-preset",
+        "@ornikar/postcss-config",
+        "@ornikar/rollup-config",
+        "@ornikar/storybook-config",
+        "@ornikar/webpack-config"
+      ]
+    },
+    {
+      "groupName": "Kitt Ornikar",
+      "sourceUrlPrefixes": [
+        "https://github.com/ornikar/kitt"
+      ]
+    },
+    {
+      "groupName": "Components Ornikar",
+      "sourceUrlPrefixes": [
+        "https://github.com/ornikar/components"
+      ],
+      "matchPackageNames": [
+        "@ornikar/api-helpers",
+        "@ornikar/auth",
+        "@ornikar/auth-api",
+        "@ornikar/react-brand-logo",
+        "@ornikar/react-forms",
+        "@ornikar/react-forms-universal",
+        "@ornikar/react-header",
+        "@ornikar/react-intl",
+        "@ornikar/react-notification",
+        "@ornikar/react-storybook",
+        "@ornikar/react-validators",
+        "@ornikar/validators"
+      ]
+    },
+    {
+      "groupName": "Runtime App Ornikar",
+      "matchPackageNames": [
+        "@ornikar/webapp-runtime",
+        "@ornikar/runtime-app",
+        "@ornikar/runtime-native-app"
+      ]
+    },
+    {
+      "groupName": "eslint packages",
+      "matchUpdateTypes": [
+        "patch",
+        "minor"
+      ],
+      "matchPackageNames": [
+        "babel-eslint"
+      ],
+      "matchPackagePatterns": [
+        "^eslint"
+      ]
+    },
+    {
+      "groupName": "flagship packages",
+      "matchPackagePatterns": [
+        "^@flagship.io/"
+      ]
+    },
+    {
+      "groupName": "linaria packages",
+      "matchPackagePatterns": [
+        "^@linaria/"
+      ]
+    }
+  ]
+}

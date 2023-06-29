@@ -1,0 +1,23 @@
+{
+  "schedule": "after 9am and before 12am on monday",
+  "reviewersFromCodeOwners": true,
+  "rebaseStalePrs": true,
+  "packageRules": [
+    {
+      "groupName": "Ornikar Backend Orb",
+      "matchDatasources": [
+        "orb"
+      ],
+      "matchPackageNames": [
+        "backend"
+      ],
+      "labels": [
+        "circleci-orb"
+      ],
+      "schedule": [
+        "at any time"
+      ],
+      "masterIssueApproval": false
+    }
+  ]
+}

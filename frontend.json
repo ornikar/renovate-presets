@@ -184,6 +184,26 @@
       "masterIssueApproval": false
     },
     {
+      "groupName": "Ornikar Ops Orb",
+      "reviewers": [
+        "team:ops"
+      ],
+      "matchDatasources": [
+        "orb"
+      ],
+      "matchPackageNames": [
+        "ops"
+      ],
+      "labels": [
+        "circleci-orb"
+      ],
+      "schedule": [
+        "at any time"
+      ],
+      "rebaseStalePrs": true,
+      "masterIssueApproval": false
+    },
+    {
       "groupName": "Ornikar Eslint Configs",
       "sourceUrlPrefixes": [
         "https://github.com/ornikar/eslint-configs"

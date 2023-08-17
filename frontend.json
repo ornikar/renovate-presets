@@ -200,7 +200,7 @@
       "schedule": [
         "at any time"
       ],
-      "rebaseStalePrs": true,
+      "rebaseStalePrs": false,
       "masterIssueApproval": false
     },
     {

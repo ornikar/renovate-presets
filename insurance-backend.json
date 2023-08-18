@@ -1,9 +1,6 @@
 {
   "masterIssue": true,
   "masterIssueApproval": true,
-  "reviewers": [
-    "team:insurance-backend"
-  ],
   "labels": [
     "dependencies"
   ],

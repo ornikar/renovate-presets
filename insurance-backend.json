@@ -1,0 +1,31 @@
+{
+  "masterIssue": true,
+  "masterIssueApproval": true,
+  "reviewers": [
+    "team:insurance-backend"
+  ],
+  "labels": [
+    "dependencies"
+  ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": []
+  },
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin"],
+      "matchDepTypes": [
+        "dependencies",
+        "devDependencies"
+      ],
+      "groupName": "autoupdate minors and patch",
+      "schedule": [
+        "after 9am and before 6pm every weekday"
+      ],
+      "automerge": true,
+      "masterIssueApproval": false,
+      "automergeType": "branch"
+    }
+  ],
+  "extends": ["github>ornikar/renovate-presets:backend"]
+}

@@ -9,7 +9,7 @@
       "groupName": "autoupdate minors and patch",
       "schedule": ["at any time"],
       "automerge": true,
-      "masterIssueApproval": true,
+      "masterIssueApproval": false,
       "automergeType": "branch"
     }
   ]

@@ -1,4 +1,5 @@
 {
+  "extends": ["github>ornikar/renovate-presets:backend"],
   "masterIssue": true,
   "masterIssueApproval": true,
   "labels": [
@@ -23,6 +24,5 @@
       "masterIssueApproval": false,
       "automergeType": "branch"
     }
-  ],
-  "extends": ["github>ornikar/renovate-presets:backend"]
+  ]
 }

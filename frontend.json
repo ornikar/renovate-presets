@@ -245,6 +245,11 @@
       "groupName": "Kitt Ornikar",
       "sourceUrlPrefixes": [
         "https://github.com/ornikar/kitt"
+      ],
+      "rebaseStalePrs": false,
+      "masterIssueApproval": false,
+      "schedule": [
+        "after 10am and before 6pm every weekday"
       ]
     },
     {

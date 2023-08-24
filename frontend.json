@@ -255,7 +255,7 @@
     {
       "groupName": "Ornikar shared-apps",
       "sourceUrlPrefixes": [
-        "https://github.com/ornikar/kitt"
+        "https://github.com/ornikar/shared-apps"
       ],
       "rebaseStalePrs": false,
       "masterIssueApproval": false,

@@ -242,7 +242,7 @@
       ]
     },
     {
-      "groupName": "Kitt Ornikar",
+      "groupName": "Ornikar kitt",
       "sourceUrlPrefixes": [
         "https://github.com/ornikar/kitt"
       ],
@@ -253,7 +253,18 @@
       ]
     },
     {
-      "groupName": "Components Ornikar",
+      "groupName": "Ornikar shared-apps",
+      "sourceUrlPrefixes": [
+        "https://github.com/ornikar/kitt"
+      ],
+      "rebaseStalePrs": false,
+      "masterIssueApproval": false,
+      "schedule": [
+        "after 10am and before 6pm every weekday"
+      ]
+    },
+    {
+      "groupName": "Ornikar Components",
       "sourceUrlPrefixes": [
         "https://github.com/ornikar/components"
       ],
@@ -267,14 +278,6 @@
         "@ornikar/react-storybook",
         "@ornikar/react-validators",
         "@ornikar/validators"
-      ]
-    },
-    {
-      "groupName": "Runtime App Ornikar",
-      "matchPackageNames": [
-        "@ornikar/webapp-runtime",
-        "@ornikar/runtime-app",
-        "@ornikar/runtime-native-app"
       ]
     },
     {

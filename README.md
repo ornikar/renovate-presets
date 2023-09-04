@@ -17,7 +17,7 @@ Then, create the configuration file (don't merge the renovate PR adding this fil
 }
 ```
 
-## If it's a library or monorepo library
+## If it's a frontend library or monorepo library
 
 > renovate.json
 

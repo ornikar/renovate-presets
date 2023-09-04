@@ -33,17 +33,6 @@ Then, create the configuration file (don't merge the renovate PR adding this fil
 
 ```json
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends": [
-        "config:base",
-        "docker:disable",
-        "group:allNonMajor",
-        ":combinePatchMinorReleases",
-        ":label(:soon: renovate)",
-        ":rebaseStalePrs",
-        ":separateMultipleMajorReleases",
-        ":timezone(Europe/Paris)",
-        "github>ornikar/renovate-presets:backend"
-    ]
+    "extends": ["github>ornikar/renovate-presets:backend"]
 }
 ```

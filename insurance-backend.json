@@ -1,0 +1,28 @@
+{
+  "extends": ["github>ornikar/renovate-presets:backend"],
+  "masterIssue": true,
+  "masterIssueApproval": true,
+  "labels": [
+    "dependencies"
+  ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": []
+  },
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin"],
+      "matchDepTypes": [
+        "dependencies",
+        "devDependencies"
+      ],
+      "groupName": "autoupdate minors and patch",
+      "schedule": [
+        "after 9am and before 6pm every weekday"
+      ],
+      "automerge": true,
+      "masterIssueApproval": false,
+      "automergeType": "branch"
+    }
+  ]
+}

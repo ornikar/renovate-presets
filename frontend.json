@@ -154,7 +154,7 @@
       "groupName": null
     },
     {
-      "updateTypes": [
+      "matchUpdateTypes": [
         "major"
       ],
       "schedule": [

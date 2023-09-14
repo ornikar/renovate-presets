@@ -61,6 +61,15 @@
       "reviewers": []
     },
     {
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "schedule": [
+        "at any time"
+      ],
+      "masterIssueApproval": true
+    },
+    {
       "matchPackagePatterns": [
         "^@ornikar/"
       ],
@@ -116,16 +125,6 @@
     },
     {
       "matchPackagePatterns": [
-        "^@ornikar/"
-      ],
-      "rebaseStalePrs": false,
-      "masterIssueApproval": false,
-      "schedule": [
-        "after 10am and before 6pm every weekday"
-      ]
-    },
-    {
-      "matchPackagePatterns": [
         "^@types/",
         "typescript"
       ],
@@ -153,13 +152,14 @@
       "groupName": null
     },
     {
-      "matchUpdateTypes": [
-        "major"
+      "matchPackagePatterns": [
+        "^@ornikar/"
       ],
+      "rebaseStalePrs": false,
+      "masterIssueApproval": false,
       "schedule": [
-        "at any time"
-      ],
-      "masterIssueApproval": true
+        "after 10am and before 6pm every weekday"
+      ]
     },
     {
       "groupName": "Ornikar Frontend Orb",

@@ -127,8 +127,7 @@
     {
       "matchPackagePatterns": [
         "^@types/",
-        "typescript",
-        "chromatic"
+        "typescript"
       ],
       "matchUpdateTypes": [
         "patch"

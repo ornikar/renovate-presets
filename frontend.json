@@ -93,7 +93,8 @@
         "yarn",
         "husky",
         "prettier",
-        "type-fest"
+        "type-fest",
+        "check-package-dependencies"
       ],
       "matchUpdateTypes": [
         "minor",

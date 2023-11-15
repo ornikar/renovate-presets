@@ -14,7 +14,7 @@
   ],
   "rangeStrategy": "bump",
   "reviewers": [
-    "team:frontend-architects"
+    "team:frontend-wg-foundations"
   ],
   "labels": [
     "dependencies"
@@ -152,8 +152,7 @@
     {
       "groupName": "Ornikar Frontend Orb",
       "reviewers": [
-        "team:frontend-wg-foundations",
-        "team:frontend-architects"
+        "team:frontend-wg-foundations"
       ],
       "matchDatasources": [
         "orb"

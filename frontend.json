@@ -32,10 +32,6 @@
         "dependencies",
         "peerDependencies"
       ],
-      "matchUpdateTypes": [
-        "major",
-        "minor"
-      ],
       "semanticCommitType": "feat"
     },
     {

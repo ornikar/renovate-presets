@@ -1,4 +1,5 @@
 {
+  "extends": [":dependencyDashboard"],
   "schedule": "after 9am and before 12am on monday",
   "reviewersFromCodeOwners": true,
   "rebaseStalePrs": false,

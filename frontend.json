@@ -286,6 +286,12 @@
       "matchPackagePatterns": [
         "^@linaria/"
       ]
+    },
+    {
+      "groupName": "Ruby",
+      "reviewers": ["team:frontend-wg-foundations"],
+      "matchDatasources": ["rubygems", "ruby-version"],
+      "rangeStrategy": "replace"
     }
   ]
 }

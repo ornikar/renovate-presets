@@ -1,10 +1,9 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>ornikar/renovate-presets:backend"],
   "masterIssue": true,
   "masterIssueApproval": true,
-  "labels": [
-    "dependencies"
-  ],
+  "labels": ["dependencies"],
   "lockFileMaintenance": {
     "enabled": true,
     "schedule": []
@@ -12,14 +11,9 @@
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch", "pin"],
-      "matchDepTypes": [
-        "dependencies",
-        "devDependencies"
-      ],
+      "matchDepTypes": ["dependencies", "devDependencies"],
       "groupName": "autoupdate minors and patch",
-      "schedule": [
-        "after 9am and before 6pm every weekday"
-      ],
+      "schedule": ["after 9am and before 6pm every weekday"],
       "automerge": true,
       "masterIssueApproval": false,
       "automergeType": "branch"

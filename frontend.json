@@ -1,4 +1,5 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "schedule": "before 5am on Monday",
   "prHourlyLimit": 0,
   "prConcurrentLimit": 40,
@@ -8,17 +9,10 @@
   "recreateClosed": true,
   "rebaseStalePrs": false,
   "updateNotScheduled": false,
-  "postUpdateOptions": [
-    "yarnDedupeFewer",
-    "yarnDedupeHighest"
-  ],
+  "postUpdateOptions": ["yarnDedupeFewer", "yarnDedupeHighest"],
   "rangeStrategy": "bump",
-  "reviewers": [
-    "team:frontend-wg-foundations"
-  ],
-  "labels": [
-    "dependencies"
-  ],
+  "reviewers": ["team:frontend-wg-foundations"],
+  "labels": ["dependencies"],
   "lockFileMaintenance": {
     "enabled": true,
     "schedule": []
@@ -28,54 +22,31 @@
   },
   "packageRules": [
     {
-      "matchDepTypes": [
-        "dependencies",
-        "peerDependencies"
-      ],
+      "matchDepTypes": ["dependencies", "peerDependencies"],
       "semanticCommitType": "feat"
     },
     {
-      "matchDepTypes": [
-        "dependencies"
-      ],
-      "matchUpdateTypes": [
-        "patch"
-      ],
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["patch"],
       "semanticCommitType": "fix"
     },
     {
-      "matchUpdateTypes": [
-        "pin"
-      ],
-      "addLabels": [
-        ":white_check_mark: bot approval"
-      ],
+      "matchUpdateTypes": ["pin"],
+      "addLabels": [":white_check_mark: bot approval"],
       "rebaseStalePrs": true,
       "masterIssueApproval": false,
-      "schedule": [
-        "after 10am and before 5pm every weekday"
-      ],
+      "schedule": ["after 10am and before 5pm every weekday"],
       "reviewers": []
     },
     {
-      "matchUpdateTypes": [
-        "major"
-      ],
-      "schedule": [
-        "at any time"
-      ],
+      "matchUpdateTypes": ["major"],
+      "schedule": ["at any time"],
       "masterIssueApproval": true
     },
     {
-      "matchPackagePatterns": [
-        "^@ornikar/"
-      ],
-      "matchUpdateTypes": [
-        "patch"
-      ],
-      "addLabels": [
-        ":white_check_mark: bot approval"
-      ],
+      "matchPackagePatterns": ["^@ornikar/"],
+      "matchUpdateTypes": ["patch"],
+      "addLabels": [":white_check_mark: bot approval"],
       "rebaseStalePrs": true,
       "reviewers": []
     },
@@ -93,103 +64,56 @@
         "type-fest",
         "check-package-dependencies"
       ],
-      "matchUpdateTypes": [
-        "minor",
-        "patch"
-      ],
-      "addLabels": [
-        ":white_check_mark: bot approval"
-      ],
+      "matchUpdateTypes": ["minor", "patch"],
+      "addLabels": [":white_check_mark: bot approval"],
       "reviewers": [],
       "rebaseStalePrs": false,
       "masterIssueApproval": false,
-      "schedule": [
-        "after 10am and before 11am every weekday"
-      ]
+      "schedule": ["after 10am and before 11am every weekday"]
     },
     {
-      "matchPackagePatterns": [
-        "^@types/",
-        "typescript"
-      ],
-      "matchUpdateTypes": [
-        "patch"
-      ],
-      "addLabels": [
-        ":white_check_mark: bot approval"
-      ],
+      "matchPackagePatterns": ["^@types/", "typescript"],
+      "matchUpdateTypes": ["patch"],
+      "addLabels": [":white_check_mark: bot approval"],
       "reviewers": [],
       "rebaseStalePrs": false,
       "masterIssueApproval": false,
-      "schedule": [
-        "after 10am and before 11am every weekday"
-      ]
+      "schedule": ["after 10am and before 11am every weekday"]
     },
     {
-      "matchPackageNames": [
-        "^@types/"
-      ],
-      "matchUpdateTypes": [
-        "patch",
-        "minor"
-      ],
+      "matchPackageNames": ["^@types/"],
+      "matchUpdateTypes": ["patch", "minor"],
       "groupName": null
     },
     {
-      "matchPackagePatterns": [
-        "^@ornikar/"
-      ],
+      "matchPackagePatterns": ["^@ornikar/"],
       "rebaseStalePrs": false,
       "masterIssueApproval": false,
-      "schedule": [
-        "after 10am and before 6pm every weekday"
-      ]
+      "schedule": ["after 10am and before 6pm every weekday"]
     },
     {
       "groupName": "Ornikar Frontend Orb",
-      "reviewers": [
-        "team:frontend-wg-foundations"
-      ],
-      "matchDatasources": [
-        "orb"
-      ],
-      "matchPackageNames": [
-        "frontend"
-      ],
-      "labels": [
-        "circleci-orb"
-      ],
-      "schedule": [
-        "at any time"
-      ],
+      "reviewers": ["team:frontend-wg-foundations"],
+      "matchDatasources": ["orb"],
+      "matchPackageNames": ["frontend"],
+      "labels": ["circleci-orb"],
+      "schedule": ["at any time"],
       "rebaseStalePrs": true,
       "masterIssueApproval": false
     },
     {
       "groupName": "Ornikar Ops Orb",
-      "reviewers": [
-        "team:ops"
-      ],
-      "matchDatasources": [
-        "orb"
-      ],
-      "matchPackageNames": [
-        "ops"
-      ],
-      "labels": [
-        "circleci-orb"
-      ],
-      "schedule": [
-        "at any time"
-      ],
+      "reviewers": ["team:ops"],
+      "matchDatasources": ["orb"],
+      "matchPackageNames": ["ops"],
+      "labels": ["circleci-orb"],
+      "schedule": ["at any time"],
       "rebaseStalePrs": false,
       "masterIssueApproval": false
     },
     {
       "groupName": "Ornikar Eslint Configs",
-      "sourceUrlPrefixes": [
-        "https://github.com/ornikar/eslint-configs"
-      ]
+      "sourceUrlPrefixes": ["https://github.com/ornikar/eslint-configs"]
     },
     {
       "groupName": "Repo Shared Configs Ornikar",
@@ -206,15 +130,11 @@
     },
     {
       "groupName": "Jest Shared Configs Ornikar",
-      "matchPackagePatterns": [
-        "^@ornikar/jest(.*)-config"
-      ]
+      "matchPackagePatterns": ["^@ornikar/jest(.*)-config"]
     },
     {
       "groupName": "Build Shared Configs Ornikar",
-      "matchPackagePatterns": [
-        "^@ornikar/babel-preset-(.*)"
-      ],
+      "matchPackagePatterns": ["^@ornikar/babel-preset-(.*)"],
       "matchPackageNames": [
         "@ornikar/babel-preset",
         "@ornikar/postcss-config",
@@ -225,31 +145,21 @@
     },
     {
       "groupName": "Ornikar kitt",
-      "sourceUrlPrefixes": [
-        "https://github.com/ornikar/kitt"
-      ],
+      "sourceUrlPrefixes": ["https://github.com/ornikar/kitt"],
       "rebaseStalePrs": false,
       "masterIssueApproval": false,
-      "schedule": [
-        "after 10am and before 6pm every weekday"
-      ]
+      "schedule": ["after 10am and before 6pm every weekday"]
     },
     {
       "groupName": "Ornikar shared-apps",
-      "sourceUrlPrefixes": [
-        "https://github.com/ornikar/shared-apps"
-      ],
+      "sourceUrlPrefixes": ["https://github.com/ornikar/shared-apps"],
       "rebaseStalePrs": false,
       "masterIssueApproval": false,
-      "schedule": [
-        "after 10am and before 6pm every weekday"
-      ]
+      "schedule": ["after 10am and before 6pm every weekday"]
     },
     {
       "groupName": "Ornikar Components",
-      "sourceUrlPrefixes": [
-        "https://github.com/ornikar/components"
-      ],
+      "sourceUrlPrefixes": ["https://github.com/ornikar/components"],
       "matchPackageNames": [
         "@ornikar/api-helpers",
         "@ornikar/auth",
@@ -264,34 +174,31 @@
     },
     {
       "groupName": "eslint packages",
-      "matchUpdateTypes": [
-        "patch",
-        "minor"
-      ],
-      "matchPackageNames": [
-        "babel-eslint"
-      ],
-      "matchPackagePatterns": [
-        "^eslint"
-      ]
+      "matchUpdateTypes": ["patch", "minor"],
+      "matchPackageNames": ["babel-eslint"],
+      "matchPackagePatterns": ["^eslint"]
     },
     {
       "groupName": "flagship packages",
-      "matchPackagePatterns": [
-        "^@flagship.io/"
-      ]
+      "matchPackagePatterns": ["^@flagship.io/"]
     },
     {
       "groupName": "linaria packages",
-      "matchPackagePatterns": [
-        "^@linaria/"
-      ]
+      "matchPackagePatterns": ["^@linaria/"]
     },
     {
       "groupName": "Ruby",
       "reviewers": ["team:frontend-wg-foundations"],
       "matchDatasources": ["rubygems", "ruby-version"],
       "rangeStrategy": "replace"
+    }
+  ],
+  "hostRules": [
+    {
+      "hostType": "docker",
+      "matchHost": "europe-west1-docker.pkg.dev",
+      "username": "_json_key_base64",
+      "password": "{{ secrets.BASE64_REGISTRY_RO_SA_KEY }}"
     }
   ]
 }

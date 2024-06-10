@@ -1,30 +1,20 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>ornikar/renovate-presets:backend"],
   "schedule": "on the 1st and 3rd day instance on monday at 8:00am",
-  "labels": [
-    "dependencies"
-  ],
+  "labels": ["dependencies"],
   "packageRules": [
     {
       "groupName": "all non-major from 'require-dev' dependencies",
       "groupSlug": "all-non-major-from-require-dev",
-      "matchDepTypes": [
-        "require-dev"
-      ],
-      "matchUpdateTypes": [
-        "minor",
-        "patch"
-      ]
+      "matchDepTypes": ["require-dev"],
+      "matchUpdateTypes": ["minor", "patch"]
     },
     {
       "groupName": "all patch from 'require' dependencies",
       "groupSlug": "all-patch-from-require",
-      "matchDepTypes": [
-        "require"
-      ],
-      "matchUpdateTypes": [
-        "patch"
-      ]
+      "matchDepTypes": ["require"],
+      "matchUpdateTypes": ["patch"]
     }
   ],
   "vulnerabilityAlerts": {

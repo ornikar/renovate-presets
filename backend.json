@@ -16,9 +16,9 @@
   "timezone": "Europe/Paris",
   "packageRules": [
     {
-      "groupName": "Ornikar Backend Orb",
+      "groupName": "Ornikar Orbs",
       "matchDatasources": ["orb"],
-      "matchPackageNames": ["backend"],
+      "matchPackageNames": ["ornikar/backend-orb", "ornikar/ops-orb"],
       "labels": ["circleci-orb"],
       "schedule": ["at any time"],
       "masterIssueApproval": false

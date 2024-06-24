@@ -18,7 +18,7 @@
     {
       "groupName": "Ornikar Backend Orb",
       "matchDatasources": ["orb"],
-      "matchPackageNames": ["backend"],
+      "matchDepNames": ["backend"],
       "labels": ["circleci-orb"],
       "schedule": ["at any time"],
       "masterIssueApproval": false
@@ -26,7 +26,7 @@
     {
       "groupName": "Ornikar Ops Orb",
       "matchDatasources": ["orb"],
-      "matchPackageNames": ["ops"],
+      "matchDepNames": ["ops"],
       "labels": ["circleci-orb"],
       "schedule": ["at any time"],
       "masterIssueApproval": false
